@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*this is for navigation bar sizing ^|^ */
+:root{/*to declare variables for colors*/
+    --bg-color: beige;
+    --text-color: black;
+    --mybrwn: rgb(126, 107, 81);
+}
+
+body{
+    background-color:var(--bg-color);
+    color: var(--text-color);
+}
+.header{
+    background-color:var(--mybrwn);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right:0;
+    z-index: 1000;
+    padding: 2rem 5%;
+    backdrop-filter: blur (10px);
+    transition: all 0.5s ease;
+    
+}
+.logo{
+    font-size: 3rem;
+    color: var(--bg-color);
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.logo:hover{
+    color: var(--text-color);
+}
+.navbar a{
+    font-size: 2rem;
+    padding-left: 6px;
+    font-weight: 700;
+    margin-left: 40px;
+    color: var(--bg-color);
+    text-decoration: none;/*to remove underline from hyperlink*/
+}
+.navbar a:hover{
+    color: var(--text-color);
+}
+section{
+    padding: 10rem 9% 2rem;
+}
+div{
+    color: black;
+}
+
+.home-content{
+    float:left;
+    padding: 90px;
+}
+.buttons{
+    padding: 14px;
+    background-color: rgb(88, 100, 88);
+    border: none;
+    border-radius: 16px;
+    margin: 4px;
+    color: var(--bg-color);
+    margin-top: 10px;
+}
+.skills{
+    align-items: center;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    margin-left: 90px;
+    padding: 90px;
+    padding: 10rem 9% 2rem;
+    margin-bottom: 10px;
+
+}
+.skill-content{
+}
+.proj1{
+    padding: 20px;
+    background-color: wheat;
+    box-shadow: 3px 5px 5px ;
+}
+.projects{
+      /*display: flex;*/
+    /*justify-content: space-between;*/
+    margin: 10px;
+    margin-left: 90px;
+    padding: 10px;
+    padding: 1rem 9% 2rem;
+}
+
+
+.contact-content{
+    align-items: center;
+    display: inline-block;
+    margin: 10px;
+    margin-left: 90px;
+    padding: 10px;
+    padding: 1rem 9% 2rem;
+}
+
+/*nav{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}*/
