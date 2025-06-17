@@ -1,72 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Daaniyah Khan-portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="pfp.jpg" type="jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Daaniyah Khan - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="pfp.jpg" type="image/jpg" />
 </head>
 <body>
-    <header class="header">        
-        <a href="#home" class="logo">Daaniyah Khan</a>
-        <nav class="navbar">
-            <a href="#home"> Home </a>
-            <a href="#skills"> Skills </a>
-            <a href="#projects"> Projects </a>
-            <a href="#contact"> Contact </a>
-        </nav>
-    </header>
+  <header class="header">
+    <a href="#home" class="logo">Daaniyah Khan</a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-
-    <section class="home" id="home">
+  <section class="home" id="home">
     <div class="home-content">
-        <h1 style="font-size: 50px; color: var(--mybrwn);"> Hello, I'm Daaniyah Khan.</h1>
-    <p> <h3>I am a second year computer science engineering student at 
-        Muffakhamjah College of Engineering and Technology, 
-        an aspiring web developer passionate about creating compelling marketing campaigns 
-        that resonate with target audience and deliver positive results.
-    </p></h3>
+      <h1>Hello, I'm Daaniyah Khan.</h1>
+      <h3>
+        I am a second year computer science engineering student at Muffakhamjah College of Engineering and Technology, 
+        an aspiring web developer passionate about creating compelling marketing campaigns that resonate with target audience and deliver positive results.
+      </h3>
     </div>
-    </section>
+  </section>
 
+  <section class="skills" id="skills">
+    <div class="skill-cont">
+      <h1>Skills</h1>
+      <div class="buttons-container">
+        <button class="buttons">HTML & CSS (basics)</button>
+        <button class="buttons">Java</button>
+        <button class="buttons">JavaScript</button>
+        <button class="buttons">React</button>
+        <button class="buttons">C language</button>
+        <button class="buttons">Python (basics)</button>
+        <button class="buttons">Marketing</button>    
+      </div>
+    </div>
+  </section>
 
-    <section class="skills" id="skills">
-        <div class="skill-cont">
-            <h1 style="font-size: 50px; color: var(--mybrwn);">Skills</h1>
-            <ul >
-                <button class="buttons">HTML CSS(basics)</button>
-                <button class="buttons">Java</button>
-                <button class="buttons">JavaScript</button>
-                <button class="buttons">C language</button>
-                <button class="buttons">Python(basics)</button>
-                <button class="buttons">Marketing</button>    
-            </ul>
-        </div>
-    </section>
+  <section class="projects" id="projects">
+    <div class="pro-cont">
+      <h1>Projects</h1>
+      <div class="proj1">
+        <h2>Shoulder-press-counter</h2>
+        <p>Shoulder-Press-Counter is an intelligent fitness tool that uses MediaPipe’s pose detection technology to accurately count your shoulder press repetitions in real time. By analyzing your body movements through a webcam or video feed, it automatically detects each completed shoulder press and keeps track of your reps, helping you maintain proper form and monitor your workout progress without needing manual counting. This makes your exercise routine more efficient and engaging, providing instant feedback so you can focus on your fitness goals.</p>
+        <a href="https://github.com/daaniyahjkhan/Shouder-Press-Counter" target="_blank" rel="noopener noreferrer">
+          <button class="buttons">View Project</button>
+        </a>
+      </div>
+      <div class="proj1">
+        <h2>Clueless Bot</h2>
+        <p>Clueless Bot is a lighthearted virtual assistant designed to misunderstand questions, offer hilariously off-topic answers, or respond with innocent confusion. It’s not here to solve your problems — it's here to make you smile.</p>
+        <a href="https://github.com/daaniyahjkhan/Clueless-Bot" target="_blank" rel="noopener noreferrer">
+          <button class="buttons">View Project</button>
+        </a>
+      </div>
+      <div class="proj1">
+        <h2>Sticky Notes App</h2>
+        <p>A react app for students or anyone to take quick notes</p>
+        <a href="https://github.com/daaniyahjkhan/sticky-notes-app" target="_blank" rel="noopener noreferrer">
+          <button class="buttons">View Project</button>
+        </a>
+      </div>
+    </div>
+  </section>
 
-
-    <section class="projects" id="projects">
-        <div class="pro-cont">
-            <h1 style="font-size: 50px; color: var(--mybrwn);">Projects</h1>
-            <div class="proj1">
-                <h2 style="color: rgb(63, 29, 29)">Project 1</h2>
-                <p>Shouder-press-counter</p>
-                <p>An opencv project using mediapipe to count the number of reps of shoulder press exercise</p>
-                <button class="buttons" >View Project</button>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="contact" id="contact">
-        <div class="contact-content">
-            <h3>Phone: +91 7032858394  &nbsp  &nbsp  Email: djk06khan@gmail.com   &nbsp  &nbsp
-            <a class="linkedin" href="https://www.linkedin.com/in/daaniyah-khan-16023a32a" target="_blank"><i class='bx bxl-linkedin-square'>
-            </i></a></h3>
-        </div>
-    </section>
-</body> 
+  <section class="contact" id="contact">
+    <div class="contact-content">
+      <h3>
+        Phone: +91 7032858394 &nbsp;&nbsp; Email: djk06khan@gmail.com &nbsp;&nbsp;
+        <a class="linkedin" href="https://www.linkedin.com/in/daaniyah-khan-16023a32a" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-linkedin-square'></i>
+        </a>
+      </h3>
+    </div>
+  </section>
+</body>
 </html>

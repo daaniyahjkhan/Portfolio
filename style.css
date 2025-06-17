@@ -1,117 +1,236 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-/*this is for navigation bar sizing ^|^ */
-:root{/*to declare variables for colors*/
-    --bg-color: beige;
-    --text-color: black;
-    --mybrwn: rgb(126, 107, 81);
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    background-color:var(--bg-color);
-    color: var(--text-color);
-}
-.header{
-    background-color:var(--mybrwn);
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    right:0;
-    z-index: 1000;
-    padding: 2rem 5%;
-    backdrop-filter: blur (10px);
-    transition: all 0.5s ease;
-    
-}
-.logo{
-    font-size: 3rem;
-    color: var(--bg-color);
-    font-weight: 400;
-    cursor: pointer;
-    transition: 0.3s ease;
-    text-decoration: none;
-}
-.logo:hover{
-    color: var(--text-color);
-}
-.navbar a{
-    font-size: 2rem;
-    padding-left: 6px;
-    font-weight: 700;
-    margin-left: 40px;
-    color: var(--bg-color);
-    text-decoration: none;/*to remove underline from hyperlink*/
-}
-.navbar a:hover{
-    color: var(--text-color);
-}
-section{
-    padding: 10rem 9% 2rem;
-}
-div{
-    color: black;
+/* Variables */
+:root {
+  --bg-color: #f5f0e6;
+  --text-color: #3f1d1d;
+  --mybrwn: #7e6b51;
+  --button-bg: #586458;
+  --button-hover-bg: #7e6b51;
+  --header-bg: rgba(126, 107, 81, 0.9);
+  --button-radius: 16px;
 }
 
-.home-content{
-    float:left;
-    padding: 90px;
-}
-.buttons{
-    padding: 14px;
-    background-color: rgb(88, 100, 88);
-    border: none;
-    border-radius: 16px;
-    margin: 4px;
-    color: var(--bg-color);
-    margin-top: 10px;
-}
-.skills{
-    align-items: center;
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    margin-left: 90px;
-    padding: 90px;
-    padding: 10rem 9% 2rem;
-    margin-bottom: 10px;
-
-}
-.skill-content{
-}
-.proj1{
-    padding: 20px;
-    background-color: wheat;
-    box-shadow: 3px 5px 5px ;
-}
-.projects{
-      /*display: flex;*/
-    /*justify-content: space-between;*/
-    margin: 10px;
-    margin-left: 90px;
-    padding: 10px;
-    padding: 1rem 9% 2rem;
+/* Body */
+body {
+  background: linear-gradient(135deg, #f5f0e6 0%, #e0d7c6 100%);
+  color: var(--text-color);
+  min-height: 100vh;
+  line-height: 1.6;
 }
 
-
-.contact-content{
-    align-items: center;
-    display: inline-block;
-    margin: 10px;
-    margin-left: 90px;
-    padding: 10px;
-    padding: 1rem 9% 2rem;
-}
-
-/*nav{
-    display: flex;
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--header-bg);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
-}*/
+  padding: 1.2rem 5%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  backdrop-filter: blur(8px);
+  transition: background-color 0.3s ease;
+}
+
+.header:hover {
+  background-color: rgba(126, 107, 81, 1);
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--bg-color);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--button-bg);
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  color: var(--bg-color);
+  margin-left: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: var(--bg-color);
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.navbar a:hover {
+  color: var(--button-bg);
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Sections */
+section {
+  padding: 12rem 9% 4rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: var(--mybrwn);
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-weight: 500;
+  margin-top: 1rem;
+  max-width: 800px;
+}
+
+/* Home Content */
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-content h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #4b4b4b;
+  max-width: 700px;
+  line-height: 1.4;
+}
+
+/* Buttons */
+.buttons {
+  background-color: var(--button-bg);
+  color: var(--bg-color);
+  border-radius: var(--button-radius);
+  padding: 12px 25px;
+  margin: 6px 10px 10px 0;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.buttons:hover {
+  background-color: var(--button-hover-bg);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(126, 107, 81, 0.5);
+}
+
+/* Skill Buttons Container */
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin-top: 1rem;
+}
+
+/* Projects */
+.pro-cont {
+  max-width: 700px;
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.proj1 {
+  background-color: #fff8e1;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(126, 107, 81, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.proj1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(126, 107, 81, 0.3);
+}
+
+.proj1 h2 {
+  margin-bottom: 8px;
+  color: var(--mybrwn);
+}
+
+.proj1 p {
+  color: #5a4b3d;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+/* Contact */
+.contact-content {
+  text-align: center;
+  margin-top: 4rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.contact-content a.linkedin {
+  color: var(--mybrwn);
+  margin-left: 10px;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.contact-content a.linkedin:hover {
+  color: var(--button-hover-bg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar a {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .header {
+    padding: 1rem 3%;
+  }
+
+  section {
+    padding: 10rem 5% 3rem;
+  }
+
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+

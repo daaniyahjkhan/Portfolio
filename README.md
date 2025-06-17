@@ -1,1 +1,1 @@
-This is a portfolio using HTML and CSS.
+This is my portfolio website using HTML and CSS.
